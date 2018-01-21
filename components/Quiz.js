@@ -102,13 +102,11 @@ handleAnimation = () => {
 		const deck = this.props.navigation.state.params.entryId
 		const number = this.state.questionNumber + 1
 
-
 		const animatedStyle = {
 			transform: [
 				{ scale: this.state.animation }
 			]
 		}
-
 
 		const rotateInterpolate = this.state.rotate.interpolate({
 			inputRange: [0, 360],
